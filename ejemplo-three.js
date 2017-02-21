@@ -8,6 +8,6 @@ renderer.render( escena, camara );
 var forma = new THREE.BoxGeometry( 1, 1, 1 );
 var cubo  = new THREE.Mesh( forma );
 cubo.rotation.x += 2.5;
-cubo.rotation.y += 0.1;
+cubo.rotation.y += 2.5;
 escena.add( cubo );
 renderer.render( escena, camara );
