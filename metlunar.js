@@ -1,6 +1,6 @@
 function setup (){
 THREE.ImageUtils.crossOrigin = '';
-var textura =THREE.ImageUtils.loadTexture('RubenAyes.github.io/Luna.jpg');
+var textura =THREE.ImageUtils.loadTexture('RubenAyes.github.io/plasma.jpg');
 var material = new THREE.MeshBasicMaterial({map: textura});
 var forma= new THREE.SphereGeometry( 25, 32, 32 );
 malla = new THREE.Mesh(forma, material);
@@ -20,8 +20,10 @@ document.body.appendChild(renderer.domElement);
 function loop() {
 requestAnimationFrame(loop);
 
-malla.rotation.x += 1;
-malla.rotation.y += 1;
+malla.rotation.x += .1;
+malla.rotation.y += .1;
+malla.rotation.z += .1;
+  
 
 renderer.render(escena, camara);
 }
