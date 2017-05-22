@@ -20,8 +20,9 @@ document.body.appendChild(renderer.domElement);
 function loop() {
 requestAnimationFrame(loop);
 
-malla.rotation.x += 0;
-malla.rotation.y += 0;
+malla.rotation.x += 0.1;
+malla.rotation.y += 0.1;
+malla.rotation.z += 0.1;  
 
 renderer.render(escena, camara);
 }
