@@ -58,7 +58,7 @@ renderer.render(escena, camara);
 var camara, escena, renderer, malla;
 setup()
 loop();
-camara.position.z = 350;
+camara.position.z = 3500;
 
 var renderizador = new THREE.WebGLRenderer();
 renderizador.setSize( window.innerHeight*.95,
