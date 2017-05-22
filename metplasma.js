@@ -2,7 +2,7 @@ function setup (){
 THREE.ImageUtils.crossOrigin = '';
 var textura =THREE.ImageUtils.loadTexture('RubenAyes.github.io/plasma.jpg');
 var material = new THREE.MeshBasicMaterial({map: textura});
-var forma= new THREE.SphereGeometry( 25, 32, 32 );
+var forma= new THREE.SphereGeometry( 20, 32, 32 );
 malla = new THREE.Mesh(forma, material);
 
 
@@ -11,6 +11,8 @@ escena.add(malla);
 
 camara = new THREE.PerspectiveCamera();
 camara.position.z = 101;
+camara.position.z = 50;
+camara.position.z = 50;
 
 renderer = new THREE.WebGLRenderer();
 renderer.setSize(window.innerHeight*.95, window.innerHeight*.95);
