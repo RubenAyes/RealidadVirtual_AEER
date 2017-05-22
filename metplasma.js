@@ -22,9 +22,9 @@ document.body.appendChild(renderer.domElement);
 function loop() {
 requestAnimationFrame(loop);
 
-malla.rotation.x += .1;
-malla.rotation.y += .1;
-malla.rotation.z += .1;
+malla.rotation.x += .01;
+malla.rotation.y += .01;
+malla.rotation.z += .01;
   
 
 renderer.render(escena, camara);
@@ -32,7 +32,7 @@ renderer.render(escena, camara);
 var camara, escena, renderer, malla;
 setup()
 loop();
-camara.position.z = 350;
+camara.position.z = 70;
 
 var renderizador = new THREE.WebGLRenderer();
 renderizador.setSize( window.innerHeight*.95,
