@@ -1,9 +1,9 @@
 function setup (){
 THREE.ImageUtils.crossOrigin = '';
-var textura =THREE.ImageUtils.loadTexture('RubenAyes.github.io/cosmico.jpg');
+var textura =THREE.ImageUtils.loadTexture('RubenAyes.github.io/acero.jpg');
 var material = new THREE.MeshBasicMaterial({map: textura});
 
-var geometry = new THREE.TorusGeometry( 25, 5, 16, 100 );
+var forma = new THREE.TorusGeometry( 25, 5, 16, 100 );
 malla = new THREE.Mesh(forma, material);
 
 
