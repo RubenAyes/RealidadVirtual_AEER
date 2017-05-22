@@ -1,6 +1,6 @@
 function setup (){
 THREE.ImageUtils.crossOrigin = '';
-var textura =THREE.ImageUtils.loadTexture('RubenAyes.github.io/cosmico.jpg');
+var textura =THREE.ImageUtils.loadTexture('RubenAyes.github.io/plasma.jpg');
 var material = new THREE.MeshBasicMaterial({map: textura});
 var figura = new THREE.Shape();
 
