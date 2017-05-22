@@ -41,7 +41,9 @@ escena.add(malla);
 
 camara = new THREE.PerspectiveCamera();
 camara.position.z = 1010;
-
+camara.position.x = 500;
+camara.position.y = 600;
+  
 renderer = new THREE.WebGLRenderer();
 renderer.setSize(window.innerHeight*.95, window.innerHeight*.95);
 document.body.appendChild(renderer.domElement);
@@ -50,15 +52,17 @@ document.body.appendChild(renderer.domElement);
 function loop() {
 requestAnimationFrame(loop);
 
-malla.rotation.x += 0;
-malla.rotation.y += 0;
+malla.rotation.x += 1;
+malla.rotation.y += 1;
 
 renderer.render(escena, camara);
 }
 var camara, escena, renderer, malla;
 setup()
 loop();
-camara.position.z = 3500;
+camara.position.z = 1010;
+camara.position.x = 500;
+camara.position.y = 600;
 
 var renderizador = new THREE.WebGLRenderer();
 renderizador.setSize( window.innerHeight*.95,
